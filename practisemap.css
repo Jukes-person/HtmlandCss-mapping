@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #101224;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    margin: 2em 0;
+
+}
+
+.title p{
+    max-width: 500px;
+    margin: 1em auto;
+    line-height: 27px;
+
+}
+
+.hbutton2 {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s;
+    background-color: rgb(119, 39, 19);
+    border-radius: 50px;
+}
+
+.hbutton2:hover {
+    transform: translateY(-5px);
+}
+
+
+.motherboard-map {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+}
+
+.motherboard-map img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.pin {
+    background: #ff0000;
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+}
+
+.pin span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+}
+
+.hover-info {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px; /* Increased from 10px */
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px; /* Added minimum width */
+    font-size: 1.1em; /* Increased font size */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow */
+}
+
+.pin:hover .hover-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Positioning the pins */
+.cpu {
+    top: 50%;
+    left: 25%;
+}
+
+.ramslot {
+    top: 26%;
+    left: 28%;
+}
+
+.power {
+    top: 12%;
+    left: 13%;
+}
+
+.gpu {
+    top: 68%;
+    left: 53%;
+}
+
+.harddrive {
+    top: 15%;
+    left: 50%;
+}
+
+.fan {
+    top: 12%;
+    left: 37%;
+}
+
+.peripherals {
+    top: 89%;
+    left: 28%;
+}

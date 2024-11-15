@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="ICONS/user.png" />
+</head>
+<body>
+     <div class="header">
+        <img src="IMAGES/LETRAN.png" class="letranlogo" alt="">
+        <h2 class="section">ICT12B</h2>
+        <h1 class="abouttitle">HARDWARE COMPONENTS</h1>
+        <button onclick="window.location.href='home.html'" class="homebutton">Home</button>
+        
+    </div>
+    <div class="subheader">
+        <button onclick="window.scrollTo({ top: 200, behavior: 'smooth' });" class="homebuttonm">CPU</button>
+        <button onclick="window.scrollTo({ top: 400, behavior: 'smooth' });" class="homebuttonm">MOTHERBOARD</button>
+        <button onclick="window.scrollTo({ top: 600, behavior: 'smooth' });" class="homebuttonm">CPU FAN</button>
+        <button onclick="window.scrollTo({ top: 800, behavior: 'smooth' });" class="homebuttonm">GPU</button>
+        <button onclick="window.scrollTo({ top: 1000, behavior: 'smooth' });" class="homebuttonm">RAM</button>
+        <button onclick="window.scrollTo({ top: 1200, behavior: 'smooth' });" class="homebuttonm">PSU</button>
+    </div>
+    <div id="member1" class="member1">
+        <img src="IMAGES/cpu.png" class="m1p" alt="Member 1" width="200" height="200">
+        <h3 class="name1">CPU (CENTRAL PROCESSING UNIT) <br> 
+        <p class="desc1">Often referred to as the brain of the computer, the CPU performs calculations and executes instructions from programs. It processes data and controls other components</p></h3>
+    </div>
+ 
+
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">Back to Top</button>
+    <div class="footer"></div>
+    <p class="created">created by Robert Gulmayo & Justine Moloboco</p>
+    </div>
+    <script>
+  window.onload = function() {
+    document.body.classList.add('loaded');
+    setTimeout(function() {
+      window.scrollTo({ top: document.body.scrollHeight / 0, behavior: 'smooth' });
+    }, 500);
+  };
+</script>
+</body>
+</html>
